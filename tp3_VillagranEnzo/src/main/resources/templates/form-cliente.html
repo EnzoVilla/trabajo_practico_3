@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>TP3 continuacion</title>
+</head>
+<body>
+	<header>
+		<h1>REGISTRO DE CLIENTES</h1>
+	</header>	
+	<main>	
+		<form action="#">
+			<label for="dni">DNI: <input id="dni" type="number" name="dni" required></label><br>
+			<label for="nombre">Nombres: <input id="nombre" type="text" name="nombre" required></label><br>
+			<label for="apellido">Apellido: <input id="apellido" type="text" name="apellido" required></label><br>
+			<label for="fechaNacimiento">Fecha de nacimiento: <input id="fechaNacimiento" type="date" name="fechaNacimiento" required></label><br>
+			<div>
+				Género:	
+				<label for="genero"> Masculino<input id="genero" type="radio" name="genero"></label>
+				<label for="genero">Femenino<input id="genero" type="radio" name="genero"></label>
+				<label for="genero">x<input id="genero" type="radio" name="genero"></label> <br>
+		    </div>
+			<label for="correo">Correo Electronico: <input id="correo" type="email" name="correo" required></label><br>
+			<label for="domicilio">Domicilio: <input id="domicilio" type="text" name="domicilio" required></label><br>
+			<label for="provincia">Provincia: </label>
+				<select id="provincia" name="provincia" required>
+					<option value="JUJUY">Jujuy</option>
+					<option value="SALTA">Salta</option>
+					<option value="TUCUMAN">Tucuman</option>
+					<option value="FORMOSA">Formosa</option>
+					<option value="CHACO">Chaco</option>
+					<option value="MISIONES">Misiones</option>
+					<option value="CATAMARCA">Catamarca</option>
+					<option value="SANTIAGO_DEL_ESTERO">Santiago del estero</option>
+					<option value="CORRIENTES">Corrientes</option>
+					<option value="LA_RIOJA">La rioja</option>
+					<option value="CORDOBA">Córdoba</option>
+					<option value="SANTA_FE">Santa fé</option>
+					<option value="SAN_JUAN">San juan</option>
+					<option value="SAN_LUIS">San luis</option>
+					<option value="ENTRE_RIOS">Entre rios</option>
+					<option value="MENDOZA">Mendoza</option>
+					<option value="LA_PAMPA">La pampa</option>
+					<option value="BUENOS_AIRES">Buenos Aires</option>
+					<option value="NEUQUEN">Neuquén</option>
+					<option value="RIO_NEGRO">Rio negro</option>
+					<option value="CHUBUT">Chubut</option>
+					<option value="SANTA_CRUZ">Santa cruz</option>
+					<option value="TIERRA_DEL_FUEGO">Tierra del fuego</option>
+				</select><br>
+			<label for="telefono">Numero de telefono: <input id="telefono" type="number" name="telefono"></label><br>
+			<div>
+				Categorias de interés:<br>
+				<label for="interes">Electrónica<input id="interes" type="checkbox" name="interes"></label>
+				<label for="interes">Electrohogar<input id="interes" type="checkbox" name="interes"></label>
+				<label for="interes">Herramientas<input id="interes" type="checkbox" name="interes"></label><br>
+			</div>
+			<label for="comentario">Si desea dejar sugerencias que nos ayude a mejorar como empresa:<br>
+				  <textarea id="comentario" name="comentario" rows="5" cols="40"></textarea>
+			</label><br>
+			<label for="contrasenia">Ingrese una contraseña<input id="contrasenia" type="password" name="contrasenia" required></label><br>
+			<label for="terminos">Acepta terminos y condiciones de la empresa<input id="terminos" type="checkbox" name="terminos" required></label><br>
+			<label for="promociones">Acepta recibir informacion relativa a la empresa<input id="promociones" type="checkbox" name="promociones"></label><br>
+			<label for="enviar">Enviar formulario<input id="enviar" type="submit" name="enviar"></label>
+		</form>
+	</main>
+	<footer>
+			<h2>Redes sociales de la facultad</h2>
+			<a href="https://www.facebook.com/fiunju/?locale=es_LA">Facebook</a><br>
+			<a href="https://www.instagram.com/fiunju/?hl=es">Instagram</a><br>
+			<a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju/?originalSubdomain=ar">Linkedin</a>
+	</footer>
+</body>
+</html>
