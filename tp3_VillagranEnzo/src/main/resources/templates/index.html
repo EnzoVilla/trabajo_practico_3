@@ -1,67 +1,73 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>APU 2024</title>
+	<meta charset="UTF-8">
+	<title>APU 2024</title>
+	<link rel="stylesheet" href="../static/css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header id="encabezado">
 		<h1>Bienvenido a Programacion Visual</h1>  
-		<nav>
+		<nav class="navegador">
 			<ul>
-				<li><a href="https://www.fi.unju.edu.ar/">Fi Unju</a></li>
-				<li><a href="https://virtual.unju.edu.ar/">Unju virtual</a></li>
-				<li><a href="https://www.unju.edu.ar/oferta2024/fi.php">Sobre Nosotros</a></li>
+				<li><a href="https://www.fi.unju.edu.ar/" class="linksNavegador">Fi Unju</a></li>
+				<li><a href="https://virtual.unju.edu.ar/" class="linksNavegador">Unju virtual</a></li>
+				<li><a href="https://www.unju.edu.ar/oferta2024/fi.php" class="linksNavegador">Sobre Nosotros</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main>
-		<section>
-			<h2>Introduccion</h2>
-			<p>
-				Vamos a explorar el mundo de Java y su aplicación en el desarrollo web.<br>
-				Abordaremos los conceptos básicos de Java, las tecnologías web esenciales<br>
-				y cómo Java se utiliza para crear aplicaciones web dinámicas y escalables.<br>
-			</p>
-		</section>
-		<section>
-			<h3>Profesores Adjunto</h3>
-			<ol>
-				<li>Ariel Vega</li>
-				<li>Carolina Apaza</li>
-				<li>Juan Carlos Rodriguez</li>
-				<li>Gustavo Sosa</li>
-			</ol>
-		</section>
-		<section>
-			<h3>Horarios de clases (teoricas y practicas)</h3>
-			<table>
-				<tr>
-					<th>LUNES</th>
-					<th>MARTES</th>
-					<th>MIERCOLES</th>
-					<th>JUEVES</th>
-					<th>VIERNES</th>
-				</tr>
-				<tr>
-					<td>Practica comision 1: 18hs</td>
-					<td></td>
-					<td>Teoria unica: 14hs</td>
-					<td>Practica comision 2: 14hs</td>
-					<td>Practica comision 3: 18hs</td>
-				</tr>
-			</table>
-		</section>
-		<aside>
-			<img alt="imagen logo de spring" src="../static/images/spring-boot.jpeg">	
-			<a href="https://spring.io/">Pagina oficial de Spring</a>	
+	<main class="principal">
+		<div class="info">
+			<section class="introduccionMateria">
+				<h2>Introduccion</h2>
+				<p>
+					Vamos a explorar el mundo de Java y su aplicación en el desarrollo web.<br>
+					Abordaremos los conceptos básicos de Java, las tecnologías web esenciales<br>
+					y cómo Java se utiliza para crear aplicaciones web dinámicas y escalables.<br>
+				</p>
+			</section>
+			<section class="listaProfesores">
+				<h3>Profesores Adjuntos:</h3>
+				<ol>
+					<li>Ariel Vega</li>
+					<li>Carolina Apaza</li>
+					<li>Juan Carlos Rodriguez</li>
+					<li>Gustavo Sosa</li>
+				</ol>
+			</section>
+			<section class="horarios">
+				<h3>Horarios de clases (teoricas y practicas)</h3>
+				<table class="tablaHorarios">
+					<tr>
+						<th>LUNES</th>
+						<th>MARTES</th>
+						<th>MIERCOLES</th>
+						<th>JUEVES</th>
+						<th>VIERNES</th>
+					</tr>
+					<tr>
+						<td>Practica comision 1: 18hs</td>
+						<td></td>
+						<td>Teoria unica: 14hs</td>
+						<td>Practica comision 2: 14hs</td>
+						<td>Practica comision 3: 18hs</td>
+					</tr>
+				</table>
+			</section>
+		</div>
+		<aside class="adicional">
+			<img alt="imagen logo de spring" src="../static/images/spring-boot.jpeg" class="logo"><br>
+			<a href="https://spring.io/" class="linksNavegador">Pagina oficial de Spring</a>	
 		</aside>
 	</main>
 	<footer>
 			<h2>Redes sociales de la facultad</h2>
-			<a href="https://www.facebook.com/fiunju/?locale=es_LA">Facebook</a>
-			<a href="https://www.instagram.com/fiunju/?hl=es">Instagram</a>
-			<a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju/?originalSubdomain=ar">Linkedin</a>
+			<div class="linksContacto">
+				<a href="https://www.facebook.com/fiunju/?locale=es_LA" class="linksNavegador">Facebook</a>
+				<a href="https://www.instagram.com/fiunju/?hl=es" class="linksNavegador">Instagram</a>
+				<a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju/?originalSubdomain=ar" class="linksNavegador">Linkedin</a>
+			</div>
 	</footer>
 </body>
 </html>

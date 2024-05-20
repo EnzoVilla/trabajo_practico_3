@@ -1,0 +1,87 @@
+body{
+	background-color: #EAFAF1;
+	font-family: "Lora", serif;
+	color:#0B5345 ;
+}
+#encabezado{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.navegador ul{
+	display: inline-flex;
+	justify-content: space-around;
+}
+
+.navegador li{
+	list-style: none;
+	font-size: 22px;
+	margin-right: 15px;
+}
+.linksNavegador:link, .linksNavegador:visited{
+	text-decoration: none;
+	color: #0B5345 ;
+}
+.linksNavegador:hover, .linksNavegador:active{
+	color: #C31FBC;
+}
+.principal{
+	display:flex;
+}
+.info{
+	width: 70%;
+}
+.adicional{
+	float:right;
+	width: 30%;
+	text-align: center;
+}
+.logo{
+	width: 80%;
+	border-radius: 17px;
+}
+.introduccionMateria, .listaProfesores{
+	text-align: center;
+}
+.listaProfesores li{
+	list-style:  none;
+}
+.tablaHorarios {
+  border: 2px solid #246C1D; 
+  border-radius: 2px;
+  width: 100%; 
+  margin: 20px auto; 
+}
+.tablaHorarios th {
+  border: 1px solid #246C1D;
+  border-radius: 2px;
+  background-color: #246C1D; 
+  padding: 10px;
+  color: white;
+}
+
+.tablaHorarios td {
+  border: 1px solid #246C1D;
+  border-radius: 2px;
+  padding: 8px; 
+}
+.linksContacto a{
+	font-size: 18px;
+	margin-right: 25px;
+}
+.formulario{
+	text-align: left;
+	width: 100%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 30%;
+}
+.nombreInput{
+	font-weight: bold;
+}
+.seleccionGenero, .seleccionInteres{
+	display: flex;
+}
+.generosDisponibles, .interesDisponible{
+	margin-left: 15px;
+}

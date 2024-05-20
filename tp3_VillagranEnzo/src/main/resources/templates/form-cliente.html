@@ -3,26 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>TP3 continuacion</title>
+	<link rel="stylesheet" href="../static/css/estilos.css">
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
 </head>
 <body>
-	<header>
+	<header id="encabezado">
 		<h1>REGISTRO DE CLIENTES</h1>
 	</header>	
-	<main>	
-		<form action="#">
-			<label for="dni">DNI: <input id="dni" type="number" name="dni" required></label><br>
-			<label for="nombre">Nombres: <input id="nombre" type="text" name="nombre" required></label><br>
-			<label for="apellido">Apellido: <input id="apellido" type="text" name="apellido" required></label><br>
-			<label for="fechaNacimiento">Fecha de nacimiento: <input id="fechaNacimiento" type="date" name="fechaNacimiento" required></label><br>
-			<div>
-				Género:	
-				<label for="genero"> Masculino<input id="genero" type="radio" name="genero"></label>
-				<label for="genero">Femenino<input id="genero" type="radio" name="genero"></label>
-				<label for="genero">x<input id="genero" type="radio" name="genero"></label> <br>
+	<main class="principal">	
+		<form action="#" class="formulario">
+			<label for="dni" class="nombreInput">DNI: <input id="dni" type="number" name="dni" required></label><br>
+			<label for="nombre" class="nombreInput">Nombres: <input id="nombre" type="text" name="nombre" required></label><br>
+			<label for="apellido" class="nombreInput">Apellido: <input id="apellido" type="text" name="apellido" required></label><br>
+			<label for="fechaNacimiento" class="nombreInput">Fecha de nacimiento: <input id="fechaNacimiento" type="date" name="fechaNacimiento" required></label><br>
+			<div class="seleccionGenero">
+				<div class="nombreInput">Género:</div> 	
+				<div class="generosDisponibles">
+					<label for="genero"> Masculino<input id="genero" type="radio" name="genero"></label>
+					<label for="genero">Femenino<input id="genero" type="radio" name="genero"></label>
+					<label for="genero">x<input id="genero" type="radio" name="genero"></label> <br>
+				</div>
 		    </div>
-			<label for="correo">Correo Electronico: <input id="correo" type="email" name="correo" required></label><br>
-			<label for="domicilio">Domicilio: <input id="domicilio" type="text" name="domicilio" required></label><br>
-			<label for="provincia">Provincia: </label>
+			<label for="correo" class="nombreInput">Correo Electronico: <input id="correo" type="email" name="correo" required></label><br>
+			<label for="domicilio" class="nombreInput">Domicilio: <input id="domicilio" type="text" name="domicilio" required></label><br>
+			<label for="provincia" class="nombreInput">Provincia: 
 				<select id="provincia" name="provincia" required>
 					<option value="JUJUY">Jujuy</option>
 					<option value="SALTA">Salta</option>
@@ -48,27 +53,32 @@
 					<option value="SANTA_CRUZ">Santa cruz</option>
 					<option value="TIERRA_DEL_FUEGO">Tierra del fuego</option>
 				</select><br>
-			<label for="telefono">Numero de telefono: <input id="telefono" type="number" name="telefono"></label><br>
-			<div>
-				Categorias de interés:<br>
-				<label for="interes">Electrónica<input id="interes" type="checkbox" name="interes"></label>
-				<label for="interes">Electrohogar<input id="interes" type="checkbox" name="interes"></label>
-				<label for="interes">Herramientas<input id="interes" type="checkbox" name="interes"></label><br>
+			</label>
+			<label for="telefono" class="nombreInput">Numero de telefono: <input id="telefono" type="number" name="telefono"></label><br>
+			<div class="seleccionInteres">
+				<div class="nombreInput">Categorias de interés:<br></div>
+				<div class="interesDisponible">
+					<label for="interes">Electrónica<input id="interes" type="checkbox" name="interes"></label>
+					<label for="interes">Electrohogar<input id="interes" type="checkbox" name="interes"></label>
+					<label for="interes">Herramientas<input id="interes" type="checkbox" name="interes"></label><br>
+				</div>
 			</div>
-			<label for="comentario">Si desea dejar sugerencias que nos ayude a mejorar como empresa:<br>
+			<label for="comentario" class="nombreInput">Si desea dejar sugerencias que nos ayude a mejorar como empresa:<br>
 				  <textarea id="comentario" name="comentario" rows="5" cols="40"></textarea>
 			</label><br>
-			<label for="contrasenia">Ingrese una contraseña<input id="contrasenia" type="password" name="contrasenia" required></label><br>
-			<label for="terminos">Acepta terminos y condiciones de la empresa<input id="terminos" type="checkbox" name="terminos" required></label><br>
-			<label for="promociones">Acepta recibir informacion relativa a la empresa<input id="promociones" type="checkbox" name="promociones"></label><br>
-			<label for="enviar">Enviar formulario<input id="enviar" type="submit" name="enviar"></label>
+			<label for="contrasenia" class="nombreInput">Ingrese una contraseña: <input id="contrasenia" type="password" name="contrasenia" required></label><br>
+			<label for="terminos" class="nombreInput">Acepta terminos y condiciones de la empresa<input id="terminos" type="checkbox" name="terminos" required></label><br>
+			<label for="promociones" class="nombreInput">Acepta recibir informacion relativa a la empresa<input id="promociones" type="checkbox" name="promociones"></label><br>
+			<label for="enviar" class="nombreInput">Enviar formulario<input id="enviar" type="submit" name="enviar"></label>
 		</form>
 	</main>
 	<footer>
 			<h2>Redes sociales de la facultad</h2>
-			<a href="https://www.facebook.com/fiunju/?locale=es_LA">Facebook</a><br>
-			<a href="https://www.instagram.com/fiunju/?hl=es">Instagram</a><br>
-			<a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju/?originalSubdomain=ar">Linkedin</a>
+			<div class="linksContacto">
+				<a href="https://www.facebook.com/fiunju/?locale=es_LA" class="linksNavegador">Facebook</a>
+				<a href="https://www.instagram.com/fiunju/?hl=es" class="linksNavegador">Instagram</a>
+				<a href="https://www.linkedin.com/school/facultad-de-ingenieria-unju/?originalSubdomain=ar" class="linksNavegador">Linkedin</a>
+			</div>
 	</footer>
 </body>
 </html>
