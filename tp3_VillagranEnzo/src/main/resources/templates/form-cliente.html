@@ -20,15 +20,16 @@
 			<div class="seleccionGenero">
 				<div class="nombreInput">Género:</div> 	
 				<div class="generosDisponibles">
-					<label for="genero"> Masculino<input id="genero" type="radio" name="genero"></label>
-					<label for="genero">Femenino<input id="genero" type="radio" name="genero"></label>
-					<label for="genero">x<input id="genero" type="radio" name="genero"></label> <br>
+					<label for="generoM"> Masculino<input id="generoM" type="radio" name="genero"></label>
+					<label for="generoF">Femenino<input id="generoF" type="radio" name="genero"></label>
+					<label for="generoX">x<input id="generoX" type="radio" name="genero"></label> <br>
 				</div>
 		    </div>
 			<label for="correo" class="nombreInput">Correo Electronico: <input id="correo" type="email" name="correo" required></label><br>
 			<label for="domicilio" class="nombreInput">Domicilio: <input id="domicilio" type="text" name="domicilio" required></label><br>
 			<label for="provincia" class="nombreInput">Provincia: 
 				<select id="provincia" name="provincia" required>
+					<option value="">Selecciona una provincia</option>
 					<option value="JUJUY">Jujuy</option>
 					<option value="SALTA">Salta</option>
 					<option value="TUCUMAN">Tucuman</option>
@@ -58,9 +59,9 @@
 			<div class="seleccionInteres">
 				<div class="nombreInput">Categorias de interés:<br></div>
 				<div class="interesDisponible">
-					<label for="interes">Electrónica<input id="interes" type="checkbox" name="interes"></label>
-					<label for="interes">Electrohogar<input id="interes" type="checkbox" name="interes"></label>
-					<label for="interes">Herramientas<input id="interes" type="checkbox" name="interes"></label><br>
+					<label for="interesElectronica">Electrónica<input id="interesElectronica" type="checkbox" name="interes"></label>
+					<label for="interesElectrohogar">Electrohogar<input id="interesElectrohogar" type="checkbox" name="interes"></label>
+					<label for="interesHerramientas">Herramientas<input id="interesHerramientas" type="checkbox" name="interes"></label><br>
 				</div>
 			</div>
 			<label for="comentario" class="nombreInput">Si desea dejar sugerencias que nos ayude a mejorar como empresa:<br>
